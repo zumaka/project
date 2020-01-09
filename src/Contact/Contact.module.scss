@@ -1,0 +1,24 @@
+
+.Main {
+  background-image: url("../img/contact.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:85vh;
+  padding-top: 130px;
+  text-align: center;
+  .Title {
+    font-family: Oswald;
+    font-weight: 700;
+    font-size: 60pt;
+    line-height: 60pt;
+    letter-spacing: 0pt;
+  }
+.Button{
+  padding-top:80px;
+  a{
+    padding-right: 50px;
+  }
+}
+}
+

@@ -1,0 +1,86 @@
+button{
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+.Title {
+  font-family: Oswald;
+  font-size: 30pt;
+  color: #241c18;
+  .Name {
+    font-size: 25pt;
+    font-weight: lighter;
+    padding-top: 15px;
+    letter-spacing: 0px;
+  }
+  .button{
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 15px;
+    margin-top: 5px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #826b60;
+    color: #e4dddb;
+    font-size: 14pt;
+    text-decoration: none;
+  }
+
+  .album__ctrl-btn:hover {
+    opacity: 1;
+  }
+}
+.Main{
+  background-image: url("../img/background.png");
+.Container {
+  position: relative;
+  width: 1480px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+
+  .Main_grid {
+    position: relative;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "I O Now" "Dis O Now";
+
+    .Img {
+      position: absolute;
+      grid-area: I;
+    }
+
+    .Discography {
+      position: absolute;
+      grid-area: Dis;
+    }
+
+    .Now {
+      margin-top:100px;
+      position: absolute;
+      grid-area: Now;
+    }
+
+  }
+}
+}
+table {
+  color: #826b60;
+  border-collapse: collapse;
+  .Listener {
+    margin-left: 100px;
+    border: 10px solid transparent;
+    border-left: 13px solid #241c18;
+    opacity: 30%;
+    display: block;
+    :hover {
+      opacity: 90%;
+    }
+  }
+}
+

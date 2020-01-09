@@ -1,0 +1,124 @@
+
+.Main {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 45.5vw;
+  color: #241c18;
+
+  .Container {
+    position: relative;
+    width: 1480px;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  .Name {
+    position: absolute;
+    bottom: 115px;
+    left: 350px;
+    font-family: Oswald, sans-serif;
+    font-weight: 700;
+    font-size: 80pt;
+    line-height: 85pt;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+
+
+  .Description {
+    width: 470px;
+    position: absolute;
+    right: 200px;
+    bottom: 115px;
+
+    h1 {
+      font-family: Oswald, sans-serif;
+      font-weight: 500;
+      font-size: 36pt;
+      text-align: center;
+    }
+
+    p {
+      font-family: Lora, sans-serif;
+      font-weight: 300;
+      font-size: 14pt;
+      line-height: 30pt;
+    }
+  }
+  button{
+    border: none;
+    outline: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    &:hover{
+      opacity: 50%;
+      cursor: pointer;
+    }
+  }
+
+  .Left,
+  .Right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: opacity .2s;
+    background-color: transparent;
+  }
+
+  .Left {
+    left: 0;
+  }
+
+  .Right {
+    right: 0;
+  }
+
+  .Point {
+    display: flex;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    background-color: #241c18;
+    opacity: .8;
+  }
+
+  .TableWrapper {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 470px;
+    right: 200px;
+    top: 120px;
+  }
+
+  .Table {
+    transform: rotateZ(-90deg);
+
+    td {
+      padding-bottom: 15px;
+      font-family: Lora, sans-serif;
+      font-weight: bold;
+      font-size: 12pt;
+      color: #735b54;
+
+
+      &:first-child {
+        padding-right: 5px;
+        text-align: right;
+      }
+
+      &:last-child {
+        padding-left: 5px;
+      }
+    }
+  }
+}
+.Active{
+  filter: brightness(2);
+}

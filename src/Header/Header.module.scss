@@ -1,0 +1,24 @@
+div .Header {
+  ul {
+    padding-left: 9.8%;
+    padding-top: 0.3%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+    li {
+      margin-left: 17px;
+
+      a {
+        padding-left: 0;
+        text-decoration: none;
+        color: #241c18;
+        font-family: Lora;
+        font-weight: 700;
+        font-size: 16pt;
+
+      }
+    }
+  }
+}
